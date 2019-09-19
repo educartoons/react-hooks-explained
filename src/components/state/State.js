@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
+import { useInput } from './useInput';
 
 export const StateComponent = () => {
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [values, handleChange] = useInput({ email: '', password: '' })
 
   return (
     <div>
       <h2>useState</h2>
-      <input type="text" value={email} onChange={e => setEmail(e.target.value)} /> <br /> <br />
-      <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+      <input name="email" type="text" value={values.email} onChange={handleChange} /> <br /> <br />
+      <input name="password" type="password" value={values.password} onChange={handleChange} />
     </div>
   )
 }
