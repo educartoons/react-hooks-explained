@@ -1,0 +1,27 @@
+{
+  "name": "react-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/educartoons/react-hooks-explained.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/educartoons/react-hooks-explained/issues"
+  },
+  "homepage": "https://github.com/educartoons/react-hooks-explained#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
