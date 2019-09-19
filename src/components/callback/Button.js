@@ -1,5 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
+import { countRenders } from './countRenders';
 
-export const Button = ({ increment }) => {
+export const Button = memo(({ increment }) => {
+
+  countRenders();
+
   return <button onClick={increment}>Count ! </button>
-}
+
+})
